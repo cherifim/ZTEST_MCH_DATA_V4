@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Teams'
+define service ZEXPOSE_TEAMS {
+  expose ZC_TEAMS;
+}

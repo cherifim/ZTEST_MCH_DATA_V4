@@ -19,94 +19,10 @@ public section.
     redefinition .
 protected section.
 
-  methods ADDRESSSET_CREATE
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_CREATE
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_CREATE
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods ADDRESSSET_DELETE
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_DELETE
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_DELETE
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods ADDRESSSET_READ
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_READ
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_READ
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods ADDRESSSET_READ_LIST
-    importing
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_LIST
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_LIST
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods ADDRESSSET_UPDATE
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_UPDATE
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_UPDATE
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods PERSONSET_CREATE
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_CREATE
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_CREATE
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods PERSONSET_DELETE
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_DELETE
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_DELETE
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods PERSONSET_READ
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_READ
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_READ
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods PERSONSET_READ_LIST
-    importing
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_LIST
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_LIST
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods PERSONSET_UPDATE
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_UPDATE
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_UPDATE
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods PERSON_READ_REF_KEY_LIST
+  methods TEAM_READ_REF_KEY_LIST
     importing
       !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_REF_L
       !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_REF_L
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods TEAMSET_CREATE
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_CREATE
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_CREATE
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods TEAMSET_DELETE
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_DELETE
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_DELETE
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods TEAMSET_READ
-    importing
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_READ
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_READ
-    raising
-      /IWBEP/CX_GATEWAY .
-  methods TEAMSET_READ_LIST
-    importing
-      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_LIST
-      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_LIST
     raising
       /IWBEP/CX_GATEWAY .
   methods TEAMSET_UPDATE
@@ -115,10 +31,124 @@ protected section.
       !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_UPDATE
     raising
       /IWBEP/CX_GATEWAY .
-  methods TEAM_READ_REF_KEY_LIST
+  methods TEAMSET_READ_LIST
+    importing
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_LIST
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_LIST
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods TEAMSET_READ
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_READ
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_READ
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods TEAMSET_DELETE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_DELETE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_DELETE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods TEAMSET_CREATE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_CREATE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_CREATE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods PERSON_READ_REF_KEY_LIST
     importing
       !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_REF_L
       !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_REF_L
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods PERSONSET_UPDATE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_UPDATE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_UPDATE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods PERSONSET_READ_LIST
+    importing
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_LIST
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_LIST
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods PERSONSET_READ
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_READ
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_READ
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods PERSONSET_DELETE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_DELETE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_DELETE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods PERSONSET_CREATE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_CREATE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_CREATE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods COMMANDESCDSSET_UPDATE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_UPDATE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_UPDATE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods COMMANDESCDSSET_READ_LIST
+    importing
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_LIST
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_LIST
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods COMMANDESCDSSET_READ
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_READ
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_READ
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods COMMANDESCDSSET_DELETE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_DELETE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_DELETE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods COMMANDESCDSSET_CREATE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_CREATE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_CREATE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods ADDRESSSET_UPDATE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_UPDATE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_UPDATE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods ADDRESSSET_READ_LIST
+    importing
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_LIST
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_LIST
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods ADDRESSSET_READ
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_READ
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_READ
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods ADDRESSSET_DELETE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_DELETE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_DELETE
+    raising
+      /IWBEP/CX_GATEWAY .
+  methods ADDRESSSET_CREATE
+    importing
+      !IO_RESPONSE type ref to /IWBEP/IF_V4_RESP_BASIC_CREATE
+      !IO_REQUEST type ref to /IWBEP/IF_V4_REQU_BASIC_CREATE
     raising
       /IWBEP/CX_GATEWAY .
 private section.
@@ -131,7 +161,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method TEAM_READ_REF_KEY_LIST.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -159,7 +189,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method TEAMSET_UPDATE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -182,7 +212,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method TEAMSET_READ_LIST.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -205,7 +235,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method TEAMSET_READ.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -228,7 +258,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method TEAMSET_DELETE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -251,7 +281,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method TEAMSET_CREATE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -274,7 +304,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method PERSON_READ_REF_KEY_LIST.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -301,7 +331,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method PERSONSET_UPDATE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -324,7 +354,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method PERSONSET_READ_LIST.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -347,7 +377,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method PERSONSET_READ.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -370,7 +400,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method PERSONSET_DELETE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -393,7 +423,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method PERSONSET_CREATE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -416,7 +446,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method ADDRESSSET_UPDATE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -439,7 +469,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method ADDRESSSET_READ_LIST.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -462,7 +492,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method ADDRESSSET_READ.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -485,7 +515,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method ADDRESSSET_DELETE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -508,7 +538,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method ADDRESSSET_CREATE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -531,7 +561,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method /IWBEP/IF_V4_DP_BASIC~UPDATE_ENTITY.
 *&-----------------------------------------------------------------------------------------------*
-*&* This class has been generated  on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated  on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -544,21 +574,21 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   CASE lv_entityset_name.
 *-------------------------------------------------------------------------*
-*             EntitySet -  AddressSet
-*-------------------------------------------------------------------------*
-    WHEN 'ADDRESSSET'.
-*     Call the entity set generated method
-      addressset_update(
-           EXPORTING io_request  = io_request
-                     io_response = io_response
-                       ).
-
-*-------------------------------------------------------------------------*
 *             EntitySet -  PersonSet
 *-------------------------------------------------------------------------*
     WHEN 'PERSONSET'.
 *     Call the entity set generated method
       personset_update(
+           EXPORTING io_request  = io_request
+                     io_response = io_response
+                       ).
+
+*-------------------------------------------------------------------------*
+*             EntitySet -  CommandesCDSSet
+*-------------------------------------------------------------------------*
+    WHEN 'COMMANDESCDSSET'.
+*     Call the entity set generated method
+      commandescdsset_update(
            EXPORTING io_request  = io_request
                      io_response = io_response
                        ).
@@ -573,6 +603,16 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
                      io_response = io_response
                        ).
 
+*-------------------------------------------------------------------------*
+*             EntitySet -  AddressSet
+*-------------------------------------------------------------------------*
+    WHEN 'ADDRESSSET'.
+*     Call the entity set generated method
+      addressset_update(
+           EXPORTING io_request  = io_request
+                     io_response = io_response
+                       ).
+
     WHEN OTHERS.
       super->/iwbep/if_v4_dp_basic~update_entity( io_request  = io_request
                                                   io_response = io_response ).
@@ -582,7 +622,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method /IWBEP/IF_V4_DP_BASIC~READ_REF_TARGET_KEY_DATA_LIST.
 *&-----------------------------------------------------------------------------------------------*
-*&* This class has been generated  on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated  on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -595,21 +635,21 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   CASE lv_source_entity_name.
 *-------------------------------------------------------------------------*
-*             Entity -  Person
-*-------------------------------------------------------------------------*
-    WHEN 'PERSON'.
-*     Call the entity type generated method
-      person_read_ref_key_list(
-           EXPORTING io_request  = io_request
-                     io_response = io_response
-                       ).
-
-*-------------------------------------------------------------------------*
 *             Entity -  Team
 *-------------------------------------------------------------------------*
     WHEN 'TEAM'.
 *     Call the entity type generated method
       team_read_ref_key_list(
+           EXPORTING io_request  = io_request
+                     io_response = io_response
+                       ).
+
+*-------------------------------------------------------------------------*
+*             Entity -  Person
+*-------------------------------------------------------------------------*
+    WHEN 'PERSON'.
+*     Call the entity type generated method
+      person_read_ref_key_list(
            EXPORTING io_request  = io_request
                      io_response = io_response
                        ).
@@ -623,7 +663,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method /IWBEP/IF_V4_DP_BASIC~READ_ENTITY_LIST.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -636,11 +676,11 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   CASE lv_entityset_name.
 *-------------------------------------------------------------------------*
-*             EntitySet -  AddressSet
+*             EntitySet -  TeamSet
 *-------------------------------------------------------------------------*
-    WHEN 'ADDRESSSET'.
+    WHEN 'TEAMSET'.
 *     Call the entity set generated method
-      addressset_read_list(
+      teamset_read_list(
         EXPORTING
           io_request  = io_request
           io_response = io_response
@@ -656,11 +696,21 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
           io_response = io_response
        ).
 *-------------------------------------------------------------------------*
-*             EntitySet -  TeamSet
+*             EntitySet -  CommandesCDSSet
 *-------------------------------------------------------------------------*
-    WHEN 'TEAMSET'.
+    WHEN 'COMMANDESCDSSET'.
 *     Call the entity set generated method
-      teamset_read_list(
+      commandescdsset_read_list(
+        EXPORTING
+          io_request  = io_request
+          io_response = io_response
+       ).
+*-------------------------------------------------------------------------*
+*             EntitySet -  AddressSet
+*-------------------------------------------------------------------------*
+    WHEN 'ADDRESSSET'.
+*     Call the entity set generated method
+      addressset_read_list(
         EXPORTING
           io_request  = io_request
           io_response = io_response
@@ -674,7 +724,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method /IWBEP/IF_V4_DP_BASIC~READ_ENTITY.
 *&-----------------------------------------------------------------------------------------------*
-*&* This class has been generated  on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated  on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -687,16 +737,6 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   CASE lv_entityset_name.
 *-------------------------------------------------------------------------*
-*             EntitySet -  AddressSet
-*-------------------------------------------------------------------------*
-    WHEN 'ADDRESSSET'.
-*     Call the entity set generated method
-      addressset_read(
-           EXPORTING io_request  = io_request
-                     io_response = io_response
-                       ).
-
-*-------------------------------------------------------------------------*
 *             EntitySet -  PersonSet
 *-------------------------------------------------------------------------*
     WHEN 'PERSONSET'.
@@ -707,11 +747,31 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
                        ).
 
 *-------------------------------------------------------------------------*
+*             EntitySet -  CommandesCDSSet
+*-------------------------------------------------------------------------*
+    WHEN 'COMMANDESCDSSET'.
+*     Call the entity set generated method
+      commandescdsset_read(
+           EXPORTING io_request  = io_request
+                     io_response = io_response
+                       ).
+
+*-------------------------------------------------------------------------*
 *             EntitySet -  TeamSet
 *-------------------------------------------------------------------------*
     WHEN 'TEAMSET'.
 *     Call the entity set generated method
       teamset_read(
+           EXPORTING io_request  = io_request
+                     io_response = io_response
+                       ).
+
+*-------------------------------------------------------------------------*
+*             EntitySet -  AddressSet
+*-------------------------------------------------------------------------*
+    WHEN 'ADDRESSSET'.
+*     Call the entity set generated method
+      addressset_read(
            EXPORTING io_request  = io_request
                      io_response = io_response
                        ).
@@ -727,7 +787,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method /IWBEP/IF_V4_DP_BASIC~DELETE_ENTITY.
 *&-----------------------------------------------------------------------------------------------*
-*&* This class has been generated  on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated  on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -739,6 +799,16 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
   io_request->get_entity_set( IMPORTING ev_entity_set_name = lv_entityset_name ).
 
   CASE lv_entityset_name.
+*-------------------------------------------------------------------------*
+*             EntitySet -  TeamSet
+*-------------------------------------------------------------------------*
+    WHEN 'TEAMSET'.
+*     Call the entity set generated method
+      teamset_delete(
+           EXPORTING io_request  = io_request
+                     io_response = io_response
+                       ).
+
 *-------------------------------------------------------------------------*
 *             EntitySet -  AddressSet
 *-------------------------------------------------------------------------*
@@ -760,11 +830,11 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
                        ).
 
 *-------------------------------------------------------------------------*
-*             EntitySet -  TeamSet
+*             EntitySet -  CommandesCDSSet
 *-------------------------------------------------------------------------*
-    WHEN 'TEAMSET'.
+    WHEN 'COMMANDESCDSSET'.
 *     Call the entity set generated method
-      teamset_delete(
+      commandescdsset_delete(
            EXPORTING io_request  = io_request
                      io_response = io_response
                        ).
@@ -778,7 +848,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
 
   method /IWBEP/IF_V4_DP_BASIC~CREATE_ENTITY.
 *&-----------------------------------------------------------------------------------------------*
-*&* This class has been generated  on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated  on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the DPC implementation, use the
@@ -801,16 +871,6 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
                        ).
 
 *-------------------------------------------------------------------------*
-*             EntitySet -  PersonSet
-*-------------------------------------------------------------------------*
-    WHEN 'PERSONSET'.
-*     Call the entity set generated method
-      personset_create(
-           EXPORTING io_request  = io_request
-                     io_response = io_response
-                       ).
-
-*-------------------------------------------------------------------------*
 *             EntitySet -  TeamSet
 *-------------------------------------------------------------------------*
     WHEN 'TEAMSET'.
@@ -820,9 +880,144 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_DPC IMPLEMENTATION.
                      io_response = io_response
                        ).
 
+*-------------------------------------------------------------------------*
+*             EntitySet -  CommandesCDSSet
+*-------------------------------------------------------------------------*
+    WHEN 'COMMANDESCDSSET'.
+*     Call the entity set generated method
+      commandescdsset_create(
+           EXPORTING io_request  = io_request
+                     io_response = io_response
+                       ).
+
+*-------------------------------------------------------------------------*
+*             EntitySet -  PersonSet
+*-------------------------------------------------------------------------*
+    WHEN 'PERSONSET'.
+*     Call the entity set generated method
+      personset_create(
+           EXPORTING io_request  = io_request
+                     io_response = io_response
+                       ).
+
     WHEN OTHERS.
       super->/iwbep/if_v4_dp_basic~create_entity( io_request  = io_request
                                                   io_response = io_response ).
   ENDCASE.
+  endmethod.
+
+
+  method COMMANDESCDSSET_UPDATE.
+*&----------------------------------------------------------------------------------------------*
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
+*&*
+*&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
+*&*   If you want to change the DPC implementation, use the
+*&*   generated methods inside DPC subclass - ZCL_ZTEST_MCH_ODATA_V4_DPC_EXT
+*&-----------------------------------------------------------------------------------------------*
+
+*Used for setting business data
+*  DATA ls_commandescds TYPE zcl_ztest_mch_odata_v4_mpc=>ts_commandescds.
+
+  DATA ls_todo_list TYPE /iwbep/if_v4_requ_basic_update=>ty_s_todo_list. "#EC NEEDED
+  DATA ls_done_list TYPE /iwbep/if_v4_requ_basic_update=>ty_s_todo_process_list.
+
+* Get the request options the application should/must handle
+  io_request->get_todos( IMPORTING es_todo_list = ls_todo_list ).
+
+* Report list of request options handled by application
+  io_response->set_is_done( ls_done_list ).
+  endmethod.
+
+
+  method COMMANDESCDSSET_READ_LIST.
+*&----------------------------------------------------------------------------------------------*
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
+*&*
+*&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
+*&*   If you want to change the DPC implementation, use the
+*&*   generated methods inside DPC subclass - ZCL_ZTEST_MCH_ODATA_V4_DPC_EXT
+*&-----------------------------------------------------------------------------------------------*
+
+*Used for setting business data
+*  DATA lt_commandescds TYPE zcl_ztest_mch_odata_v4_mpc=>tt_commandescds.
+
+  DATA ls_todo_list TYPE /iwbep/if_v4_requ_basic_list=>ty_s_todo_list. "#EC NEEDED
+  DATA ls_done_list TYPE /iwbep/if_v4_requ_basic_list=>ty_s_todo_process_list.
+
+* Get the request options the application should/must handle
+  io_request->get_todos( IMPORTING es_todo_list = ls_todo_list ).
+
+* Report list of request options handled by application
+  io_response->set_is_done( ls_done_list ).
+  endmethod.
+
+
+  method COMMANDESCDSSET_READ.
+*&----------------------------------------------------------------------------------------------*
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
+*&*
+*&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
+*&*   If you want to change the DPC implementation, use the
+*&*   generated methods inside DPC subclass - ZCL_ZTEST_MCH_ODATA_V4_DPC_EXT
+*&-----------------------------------------------------------------------------------------------*
+
+*Used for setting business data
+*  DATA ls_commandescds TYPE zcl_ztest_mch_odata_v4_mpc=>ts_commandescds.
+
+  DATA ls_todo_list TYPE /iwbep/if_v4_requ_basic_read=>ty_s_todo_list. "#EC NEEDED
+  DATA ls_done_list TYPE /iwbep/if_v4_requ_basic_read=>ty_s_todo_process_list.
+
+* Get the request options the application should/must handle
+  io_request->get_todos( IMPORTING es_todo_list = ls_todo_list ).
+
+* Report list of request options handled by application
+  io_response->set_is_done( ls_done_list ).
+  endmethod.
+
+
+  method COMMANDESCDSSET_DELETE.
+*&----------------------------------------------------------------------------------------------*
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
+*&*
+*&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
+*&*   If you want to change the DPC implementation, use the
+*&*   generated methods inside DPC subclass - ZCL_ZTEST_MCH_ODATA_V4_DPC_EXT
+*&-----------------------------------------------------------------------------------------------*
+
+*Used for setting business data
+*  DATA ls_commandescds TYPE zcl_ztest_mch_odata_v4_mpc=>ts_commandescds.
+
+  DATA ls_todo_list TYPE /iwbep/if_v4_requ_basic_delete=>ty_s_todo_list. "#EC NEEDED
+  DATA ls_done_list TYPE /iwbep/if_v4_requ_basic_delete=>ty_s_todo_process_list.
+
+* Get the request options the application should/must handle
+  io_request->get_todos( IMPORTING es_todo_list = ls_todo_list ).
+
+* Report list of request options handled by application
+  io_response->set_is_done( ls_done_list ).
+  endmethod.
+
+
+  method COMMANDESCDSSET_CREATE.
+*&----------------------------------------------------------------------------------------------*
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
+*&*
+*&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
+*&*   If you want to change the DPC implementation, use the
+*&*   generated methods inside DPC subclass - ZCL_ZTEST_MCH_ODATA_V4_DPC_EXT
+*&-----------------------------------------------------------------------------------------------*
+
+*Used for setting business data
+*  DATA ls_commandescds  TYPE zcl_ztest_mch_odata_v4_mpc=>ts_commandescds.
+
+  DATA ls_todo_list TYPE /iwbep/if_v4_requ_basic_create=>ty_s_todo_list. "#EC NEEDED
+  DATA ls_done_list TYPE /iwbep/if_v4_requ_basic_create=>ty_s_todo_process_list.
+
+* Get the request options the application should/must handle
+  io_request->get_todos( IMPORTING es_todo_list = ls_todo_list ).
+
+* Report list of request options handled by application
+  io_response->set_is_done( ls_done_list ).
   endmethod.
 ENDCLASS.

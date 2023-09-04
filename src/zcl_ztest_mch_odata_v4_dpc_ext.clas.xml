@@ -11,6 +11,71 @@
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
    </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>COLLECTED_CHANGES</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Operations in a $batch request (request/response pairs)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DEFERRED</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Variable booléenne (X=vrai, -=faux, espace=inconnu)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_COLLECT_CHANGE</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Collect a change for deferred mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_EXECUTE_CHANGES</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Execute changes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_PROCESS_CHANGES</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Process changes</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>_COLLECT_CHANGE</CMPNAME>
+     <SCONAME>/IWBEP/CX_GATEWAY</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>SAP Gateway Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_EXECUTE_CHANGES</CMPNAME>
+     <SCONAME>/IWBEP/CX_GATEWAY</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>SAP Gateway Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_EXECUTE_CHANGES</CMPNAME>
+     <SCONAME>CHANGES</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Operations in a $batch request (request/response pairs)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_CHANGE</CMPNAME>
+     <SCONAME>/IWBEP/CX_GATEWAY</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>SAP Gateway Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_CHANGE</CMPNAME>
+     <SCONAME>CHANGE</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Operations in a $batch request (request/response pairs)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_PROCESS_CHANGES</CMPNAME>
+     <SCONAME>/IWBEP/CX_GATEWAY</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>SAP Gateway Exception</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
   </asx:values>
  </asx:abap>
 </abapGit>

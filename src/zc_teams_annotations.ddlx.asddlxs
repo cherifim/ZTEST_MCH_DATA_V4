@@ -1,0 +1,27 @@
+@Metadata.layer: #PARTNER
+
+@UI: {
+    headerInfo: {
+        typeName: 'Team',
+        typeNamePlural: 'Teams',
+        title: { type: #STANDARD, label: 'Team', value: 'Name' } 
+    } 
+}
+
+annotate view ZC_TEAMS with
+{
+
+  @UI.facet: [{ id: 'Team',
+                purpose: #STANDARD,
+                type: #IDENTIFICATION_REFERENCE,
+                label: 'Team Tab',
+                position: 10 }]
+  @UI:{ lineItem: [{ position: 10, label: 'Team ID' }],
+        identification: [{ position: 10, label: 'Team ID' }]
+      }
+  TeamId;
+  @UI:{ lineItem: [{ position: 20, label: 'Name' }],
+        identification: [{ position: 20, label: 'Name' }]
+  }
+  Name;
+}

@@ -17,6 +17,10 @@ public section.
   types:
      TT_ADDRESS type standard table of TS_ADDRESS .
   types:
+     TS_COMMANDESCDS type ZVCDS_COMM_MCH .
+  types:
+     TT_COMMANDESCDS type standard table of TS_COMMANDESCDS .
+  types:
      begin of TS_PERSON,
          ID type /IWBEP/SB_ODATA_TY_INT2,
          FIRST_NAME type STRING,
@@ -39,6 +43,11 @@ public section.
 protected section.
 private section.
 
+  methods DEFINE_COMMANDESCDS
+    importing
+      !IO_MODEL type ref to /IWBEP/IF_V4_MED_MODEL
+    raising
+      /IWBEP/CX_GATEWAY .
   methods DEFINE_TEAM
     importing
       !IO_MODEL type ref to /IWBEP/IF_V4_MED_MODEL
@@ -63,13 +72,14 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_MPC IMPLEMENTATION.
 
   method /IWBEP/IF_V4_MP_BASIC~DEFINE.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the MPC implementation, use the
 *&*   generated methods inside MPC subclass - ZCL_ZTEST_MCH_ODATA_V4_MPC_EXT
 *&-----------------------------------------------------------------------------------------------*
   define_address( io_model ).
+  define_commandescds( io_model ).
   define_person( io_model ).
   define_team( io_model ).
   endmethod.
@@ -77,7 +87,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_MPC IMPLEMENTATION.
 
   method DEFINE_ADDRESS.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the MPC implementation, use the
@@ -137,7 +147,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_MPC IMPLEMENTATION.
 
   method DEFINE_PERSON.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the MPC implementation, use the
@@ -215,7 +225,7 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_MPC IMPLEMENTATION.
 
   method DEFINE_TEAM.
 *&----------------------------------------------------------------------------------------------*
-*&* This class has been generated on 02.03.2023 18:22:50 in client 100
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
 *&*
 *&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
 *&*   If you want to change the MPC implementation, use the
@@ -267,5 +277,53 @@ CLASS ZCL_ZTEST_MCH_ODATA_V4_MPC IMPLEMENTATION.
 
  lo_entity_set->add_navigation_prop_binding( iv_navigation_property_path = 'PERSONS'
                                                               iv_target_entity_set = 'PERSONSET' ). "#EC NOTEXT
+  endmethod.
+
+
+  method DEFINE_COMMANDESCDS.
+*&----------------------------------------------------------------------------------------------*
+*&* This class has been generated on 03.03.2023 15:22:15 in client 100
+*&*
+*&*       WARNING--> NEVER MODIFY THIS CLASS <--WARNING
+*&*   If you want to change the MPC implementation, use the
+*&*   generated methods inside MPC subclass - ZCL_ZTEST_MCH_ODATA_V4_MPC_EXT
+*&-----------------------------------------------------------------------------------------------*
+
+ DATA lo_entity_type    TYPE REF TO /iwbep/if_v4_med_entity_type.
+ DATA lo_property       TYPE REF TO /iwbep/if_v4_med_prim_prop.
+ DATA lo_entity_set     TYPE REF TO /iwbep/if_v4_med_entity_set.
+ DATA lv_commandescds  TYPE zvcds_comm_mch.
+***********************************************************************************************************************************
+*   ENTITY - CommandesCDS
+***********************************************************************************************************************************
+ lo_entity_type = io_model->create_entity_type_by_struct( iv_entity_type_name = 'COMMANDESCDS' is_structure = lv_commandescds
+                                                          iv_add_conv_to_prim_props = abap_true ). "#EC NOTEXT
+
+ lo_entity_type->set_edm_name( 'CommandesCDS' ).            "#EC NOTEXT
+
+***********************************************************************************************************************************
+*   Properties
+***********************************************************************************************************************************
+ lo_property = lo_entity_type->create_prim_property( iv_property_name = 'EKKOEBELN' ). "#EC NOTEXT
+ lo_property->set_edm_name( 'EkkoEbeln' ).                  "#EC NOTEXT
+ lo_property->set_edm_type( iv_edm_type = 'String' ).       "#EC NOTEXT
+ lo_property->set_is_key( ).
+ lo_property->set_max_length( iv_max_length = '10' ).       "#EC NOTEXT
+
+ lo_property = lo_entity_type->create_prim_property( iv_property_name = 'EKKOBUKRS' ). "#EC NOTEXT
+ lo_property->set_edm_name( 'EkkoBukrs' ).                  "#EC NOTEXT
+ lo_property->set_edm_type( iv_edm_type = 'String' ).       "#EC NOTEXT
+ lo_property->set_max_length( iv_max_length = '10' ).       "#EC NOTEXT
+
+ lo_property = lo_entity_type->create_prim_property( iv_property_name = 'EKKOAEDAT' ). "#EC NOTEXT
+ lo_property->set_edm_name( 'EkkoAedat' ).                  "#EC NOTEXT
+ lo_property->set_edm_type( iv_edm_type = 'Date' ).         "#EC NOTEXT
+
+
+***********************************************************************************************************************************
+*   ENTITY SETS
+***********************************************************************************************************************************
+ lo_entity_set = lo_entity_type->create_entity_set( 'COMMANDESCDSSET' ). "#EC NOTEXT
+ lo_entity_set->set_edm_name( 'CommandesCDSSet' ).          "#EC NOTEXT
   endmethod.
 ENDCLASS.

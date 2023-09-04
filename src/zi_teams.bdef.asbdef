@@ -1,0 +1,20 @@
+managed implementation in class zbp_i_teams unique;
+
+
+define behavior for ZI_TEAMS alias Team
+persistent table zteams
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  mapping for zteams
+  {
+      TeamId = team_id;
+      Name = name;
+  }
+
+}
